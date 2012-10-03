@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+		<style>
+			html { 
+				background: #000 url(img/2.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				color: rgba(255, 255, 255, 0.75);
+				font-size: 50px;
+				padding: 1em;
+				font-weight: 700;
+				text-shadow: 0 0 25px black;
+			}
+			p{
+				
+				line-height: 1em;
+			}
+			p.small {
+				line-height: .25em;
+			}
+			small {
+				font-size: .25em;
+			}
+			strong {
+				color: rgba(255, 255, 255, 1);
+				text-transform: uppercase;
+			}
+			@media (max-width:500px) { 
+				html { font-size: 30px; }
+			}
+		</style>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script>
+			window.jQuery(document).ready(function($){
+				setInterval(function(){
+					$('blink').toggle();
+				}, 500);
+				var thename = "Mitch";
+				var i=0;
+				var phone = true;
+				$(document).keydown(function(e){
+					if(e.keyCode == 8){ //backspace
+						return false;
+					} else if (e.keyCode == 13) {
+						$("#name").click();
+					}
+					phone = false;
+					if(i < thename.length) {
+						i++;
+					} else {
+						$("#name").css("text-decoration", "underline").css("color", "rgba(255, 255, 255, 1)").css("cursor", "pointer");
+						$("blink").remove();
+					}
+					$("#name").text(thename.substring(0,i));
+				});
+				$("#name").click(function(){
+					window.location = '19.html';
+				});
+			});
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>
+			A <strong>GANGLY HACKER</strong> sits in a <strong>COMMAND CENTRE</strong>*.
+		</p>
+		<p>
+			He is 16 years old and knows pretty much everything about <strong>COMPUTERS</strong> and <strong>ELECTRONICS</strong>.
+			He is upset because he has been put into <strong>TEMPORARY SUSPENSION WITHOUT PAY</strong>** for hacking into a <strong>GOVERNMENT COMPUTER SYSTEM</strong>***.
+		</p>
+		<p>
+			His name is...
+		</p>
+		
+		<p>Enter name: <span id='name'></span><blink>_</blink></p>
+		<p class='small'>
+			<small>* his BEDROOM</small><br />
+			<small>** GROUNDED without allowance</small><br />
+			<small>*** Highschool COMPUTER LAB</small><br />
+        </p>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
