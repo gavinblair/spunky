@@ -93,7 +93,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+            html {
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                color: rgba(255, 255, 255, 0.75);
+                font-size: 40px;
+                padding: 1em;
+                font-weight: 700;
+                text-shadow: 0 0 25px black;
+            }
+            p.title {
+                color: rgba(255, 255, 255, 0.50);
+            }
+            p, ul{
+                margin: .5em auto;
+                width: 80%;
+                line-height: 1.2em;
+            } 
+            ul {
 
+                padding-left: 4em;
+            }
+            strong {
+                color: rgba(255, 255, 255, 1);
+                text-transform: uppercase;
+            }
+            strong {
+                color: rgba(255, 255, 255, 1);
+                text-transform: uppercase;
+            }
+            @media (max-width:500px) {
+                html { font-size: 20px; }
+            }
+            a {
+                color: #fff;
+            }
 
 
 
