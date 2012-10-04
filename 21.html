@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+		<style>
+			html { 
+				background: #000 url(img/2.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				color: rgba(255, 255, 255, 0.75);
+				font-size: 40px;
+				padding: 1em;
+				font-weight: 700;
+				text-shadow: 0 0 25px black;
+			}
+			p.title {
+				color: rgba(255, 255, 255, 0.50);
+			}
+			p, ul {
+				margin: .5em auto;
+				width: 80%;
+				line-height: 1.2em;
+			} 
+			pre {
+				width: 60%;
+				margin: .5em auto;
+				color: lime;
+				font-size: .5em;
+				text-shadow: 0 0 4px black;
+				background-image: url(img/pre.png);
+				display: block;
+				padding: 1em;
+			}
+			ul {
+
+				padding-left: 4em;
+			}
+			strong {
+				color: rgba(255, 255, 255, 1);
+				text-transform: uppercase;
+			}
+			@media (max-width:500px) { 
+				html { font-size: 20px; }
+			}
+			a {
+				color: #fff;
+			}
+		</style>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script>
+		
+			window.jQuery(document).ready(function($){
+				setInterval(function(){
+					$('blink').toggle();
+				}, 500);
+				
+				
+				$(document).keydown(function(e){
+					if(e.keyCode == 13){
+						window.location = $("#command").attr("href");
+					}
+				});
+				
+				
+			});
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p class='title'>&gt; Go to Hacker News</p>
+		<p>
+			You enter the address of the Hacker News website, and lynx displays a text-only version. A secret message appears at the top that is only visible to visitors using ASCII-based browsers: 
+		</p>
+		<p>
+			<pre>vv3|_(0AA3 1337 |-|4XORz!!!!!1111ONE</pre>
+		</p>
+		<p>
+			The message makes you smile.
+		</p>
+		<p>
+			> <a id='command' href='22.html'>read something</a><blink>_</blink>
+		</p>
+        
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
