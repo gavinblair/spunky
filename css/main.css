@@ -115,6 +115,7 @@ textarea {
             }
             p.title {
                 color: rgba(255, 255, 255, 0.50);
+                cursor: pointer;
             }
             p, ul{
                 margin: .5em auto;
@@ -132,9 +133,6 @@ textarea {
             strong {
                 color: rgba(255, 255, 255, 1);
                 text-transform: uppercase;
-            }
-            @media (max-width:500px) {
-                html { font-size: 20px; }
             }
             a {
                 color: #fff;
@@ -163,8 +161,12 @@ textarea {
                 text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #FF00DE, 0 0 70px #FF00DE, 0 0 80px #FF00DE, 0 0 100px #FF00DE, 0 0 150px #FF00DE;
             }
             .fire {
-                color: white;
-                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #c00, 0 0 70px #c00, 0 0 80px #c00, 0 0 100px #c00, 0 0 150px #c00;
+                color: red;
+                text-shadow: 1px 1px 1px #000;
+            }
+            .hearts {
+                color: red;
+                font-size: 4em;
             }
             .crazy {
                 color: white;
@@ -172,14 +174,76 @@ textarea {
             }
             .pixel {
                 font-family: 'Press Start 2P', cursive;
-                font-size: 30px;
+                font-size: 1.5em;
+            }
+            .wowza {
+                background: url(../img/argh.png) repeat, white;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-animation-name: masked-animation;
+                -webkit-animation-duration: 40s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+            }
+            .oh {
+             background: url(../img/oh.png) repeat, white;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-animation-name: masked-animation;
+                -webkit-animation-duration: 40s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;   
+                text-shadow: none;
+            }
+            @-webkit-keyframes masked-animation {
+                0% {background-position: left bottom;}
+                100% {background-position: right bottom;}
+            }
+
+            .ouch {
+              -webkit-animation-name: blinker;  
+              -webkit-animation-iteration-count: 1;
+              -webkit-animation-duration: 1s;
+              -webkit-animation-fill-mode: forwards;
+            }
+            .better {
+              -webkit-animation-name: blinker;
+              -webkit-animation-iteration-count: 10;  
+              -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+              -webkit-animation-duration: .1s; 
             }
 
 
 
 
 
-
+            @-webkit-keyframes blinker {  
+              0% { opacity: 1.0; }
+              5% { opacity : 0.0;}
+              10% { opacity : 1.0;}
+              15% { opacity : 0.0;}
+              20% { opacity : 1.0;}
+              25% { opacity : 0.0;}
+              30% { opacity : 1.0;}
+              35% { opacity : 0.0;}
+              40% { opacity : 1.0;}
+              45% { opacity : 0.0;}
+              50% { opacity: 1.0; }
+              55% { opacity : 0.0;}
+              60% { opacity : 1.0;}
+              65% { opacity : 0.0;}
+              70% { opacity : 1.0;}
+              75% { opacity : 0.0;}
+              80% { opacity : 1.0;}
+              85% { opacity : 0.0;}
+              90% { opacity : 0.0;}
+              95% { opacity : 0.0;}
+              100% { opacity: 0.0; }
+            }
+            @media (max-width:500px) {
+                html { font-size: 20px; }
+                pre { width: 80%;}
+            }
 
 
 

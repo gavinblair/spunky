@@ -32,14 +32,22 @@
 			window.jQuery(document).ready(function($){
 				var thename = "Mitch";
 				var i=0;
-				var phone = true;
+				var phoneinterval = setInterval(function(){
+					var len = $("#entername").val().length;
+					$("#name").text(thename.substring(0,len));
+					if(len >= thename.length){
+						$("#name").css("text-decoration", "underline").css("color", "rgba(255, 255, 255, 1)").css("cursor", "pointer");
+						$("blink").remove();
+						clearInterval(phoneinterval);
+					}
+				}, 300);
 				$(document).keydown(function(e){
 					if(e.keyCode == 8){ //backspace
 						return false;
 					} else if (e.keyCode == 13) {
 						$("#name").click();
 					}
-					phone = false;
+					clearInterval(phoneinterval);
 					if(i < thename.length) {
 						i++;
 					} else {
@@ -71,7 +79,7 @@
 			His name is...
 		</p>
 		
-		<p>Enter name: <span id='name'></span><blink>_</blink></p>
+		<p><label onclick="" for='entername' class='enter'>Enter&nbsp;name:&nbsp;</label><input name="entername" id="entername" /><span id='name'></span><blink>_</blink></p>
 		<p class='small'>
 			<small>* his BEDROOM</small><br />
 			<small>** GROUNDED without allowance</small><br />
