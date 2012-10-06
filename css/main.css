@@ -104,6 +104,15 @@ textarea {
                 font-weight: 700;
                 text-shadow: 0 0 25px black;
             }
+            label { cursor: pointer; }
+            #entername {
+                position: absolute;
+                left: -9999px;
+            }
+
+            blink.unblink {
+                opacity: 0;
+            }
             p.title {
                 color: rgba(255, 255, 255, 0.50);
             }
