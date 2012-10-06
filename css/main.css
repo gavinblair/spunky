@@ -130,6 +130,41 @@ textarea {
             a {
                 color: #fff;
             }
+            p.small {
+                line-height: .25em;
+            }
+            small {
+                font-size: .25em;
+            }
+            pre {
+                width: 60%;
+                margin: .5em auto;
+                color: lime;
+                font-size: .5em;
+                background-image: url(../img/pre.png);
+                display: block;
+                padding: 1em;
+            }
+            .threed {
+                color: rgba(0, 168, 255, 0.5);
+                text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+            }
+            .neon {
+                color: white;
+                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #FF00DE, 0 0 70px #FF00DE, 0 0 80px #FF00DE, 0 0 100px #FF00DE, 0 0 150px #FF00DE;
+            }
+            .fire {
+                color: white;
+                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #c00, 0 0 70px #c00, 0 0 80px #c00, 0 0 100px #c00, 0 0 150px #c00;
+            }
+            .crazy {
+                color: white;
+                text-shadow: 2px 2px 0 #ED1C24, 5px 5px 0 #2EC5E2, 7px 7px 0 #F9058B, 10px 10px 0 #FF7F27;
+            }
+            .pixel {
+                font-family: 'Press Start 2P', cursive;
+                font-size: 30px;
+            }
 
 
 
