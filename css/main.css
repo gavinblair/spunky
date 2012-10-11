@@ -93,6 +93,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+            html.intro {
+    			font-size: 50px;
+			}
+            html.act1 {
+                background: #000 url(../img/1.jpg) no-repeat center center fixed; 
+            }
+            html.act2{
+                background: #000 url(../img/2.jpg) no-repeat center center fixed;
+            }
+			html.intro p {
+				width: auto;
+			}
+			@media (max-width:500px) { 
+                html.intro { font-size: 30px; }
+            }
+
             html {
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
