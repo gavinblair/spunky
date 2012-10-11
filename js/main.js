@@ -15,13 +15,13 @@ window.jQuery(document).ready(function($){
 	});
     
     var hash = window.location.hash.substring(1);
-    if(hash.length == 0) { hash = 1; }
+    if(hash.length == 0) { hash = "1"; }
     
     load_content(hash);
     
     window.onhashchange = function(){
         var hash = window.location.hash.substring(1);
-        if(hash.length == 0) { hash = 1; }
+        if(hash.length == 0) { hash = "1"; }
         
         load_content(hash);
     }
@@ -36,8 +36,10 @@ function load_content(hash){
 
         //custom javascript per page:
         
+
         switch(hash){
             case "1":
+                
                 var thename = "Adeline";
                 var i=0;
                 var phoneinterval = setInterval(function(){
