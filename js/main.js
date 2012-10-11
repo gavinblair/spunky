@@ -100,11 +100,12 @@ function load_content(hash){
 				});
             break;
             case "27":
-                $("p").each(function(){
+                $("p, pre").each(function(){
                     if(!$(this).hasClass("noblack")){
-                        $(this).animate({ color: "black" }, 600);
+                        $(this).animate({opacity: 0}, 2000);
                     }
                 });
+                $("html").css("background-image", "none");
             break;
         }
     });
