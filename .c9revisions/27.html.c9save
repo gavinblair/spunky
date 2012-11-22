@@ -1,0 +1,4 @@
+{"ts":1349924005481,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<div class=\"template act2\">\r\n    <p class='title'>&gt; black out</p>\r\n    <pre style=\"text-align: center;\"><strong class=\"hearts\">♥ ♥ ♥ <span class=\"ouch\">♥</span></strong></pre>\r\n    <p>\r\n    \t> <a id='command' href='#28'>???</a><blink>_</blink>\r\n\t</p>\r\n</div>"]],"start1":0,"start2":0,"length1":0,"length2":261}]],"length":261}
+{"ts":1349924064921,"patch":[[{"diffs":[[0,"\r\n    <p"],[1," class='noblack'"],[0,">\r\n    \t"]],"start1":178,"start2":178,"length1":16,"length2":32}]],"length":277,"saved":false}
+{"ts":1349924537968,"patch":[[{"diffs":[[0,"f='#"],[-1,"28"],[0,"'>??"]],"start1":231,"start2":231,"length1":10,"length2":8}]],"length":275,"saved":false}
+{"ts":1349924593840,"patch":[[{"diffs":[[0," href='#"],[1,"27"],[0,"'>???</a"]],"start1":227,"start2":227,"length1":16,"length2":18}]],"length":277,"saved":false}
