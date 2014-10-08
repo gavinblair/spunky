@@ -102,6 +102,12 @@ textarea {
             html.act2{
                 background: #000 url(../img/2.jpg) no-repeat center center fixed;
             }
+            html.act3{
+                background: #000 url(../img/3.jpg) no-repeat center center fixed;
+            }
+            html.black {
+                background-image: none;   
+            }
 			html.intro p {
 				width: auto;
 			}

@@ -101,13 +101,21 @@ function load_content(hash){
 					window.location.hash = '19';
 				});
             break;
+            case "26":
+                $("p, pre").css("opacity", "1");
+                $("html").removeClass("black");
+            break;
             case "27":
                 $("p, pre").each(function(){
                     if(!$(this).hasClass("noblack")){
                         $(this).animate({opacity: 0}, 2000);
                     }
                 });
-                $("html").css("background-image", "none");
+                $("html").addClass("black");
+            break;
+            case "28":
+                $("p, pre").css("opacity", "1");
+                $("html").removeClass("black");
             break;
         }
     });
